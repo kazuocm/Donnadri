@@ -1,0 +1,30 @@
+#sobre{
+    padding: 50px;
+    background:var(--purple);
+    margin: 5rem;
+}
+
+#contentsobre{
+    gap: 6%;
+}
+
+#txtsobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--white);
+    gap: 20px;
+}
+
+#txtsobre p{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#imgsobre img{
+    max-height: 23rem;
+}

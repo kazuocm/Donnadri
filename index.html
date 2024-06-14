@@ -1,110 +1,252 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/global.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/home.css">
-    <link rel="stylesheet" href="src/styles/sobre.css">
-    <link rel="stylesheet" href="src/styles/produtos.css">
-    <title>Donnadri</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/var.css">
+    <title>Donnadri Brindes</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="src/img/donnadri_logotipo.png" alt="logotipo">
-        </div>
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#sobre">sobre</a>
-            <a href="#produtos">produtos</a>
-            <a href="#catalogo">catálogo</a>
-            <a href="#contato">contato</a>
+    <header id="header">
+        <a href="#">
+            <img id="logotipo" src="src/img/donnadri_logotipo.png" alt="logotipo">
+        </a>
+        <nav>
+            <ul id="navbar">
+                <a href="#">
+                    <li>home</li>
+                </a>
+                <a href="#vantagens">
+                    <li>vantagens</li>
+                </a>
+                <a href="#sobre">
+                    <li>sobre</li>
+                </a>
+                <a href="#produtos">
+                    <li>produtos</li>
+                </a>
+                <a href="#avaliacoes">
+                    <li>avaliações</li>
+                </a>
+                <li id="navbar-cta">catálogo</li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="divisoria"></div>
-
-        <section id="home">
-            <div class="imghome">
-                <img id="bghome" src="src/img/8838633.jpg" alt="banner com brilho">
+    <div id="hero" class="flex-center">
+        <div id="hero-content" class="column">
+            <div>
+                <h1 class="h1">brindes afetivos</h1>
+                <h2 class="h2">Pequenos gestos, Grandes sorrisos!</h2>
             </div>
-            <div class="contenthome">
-                <img id="pessoahome" src="src/img/freepik-export-20240510141913cIJM.png" alt="mulher segurando presente">
-                <div id="txthome">
-                    <h2><span>brindes afetivos.</span>pequenos gestos, grandes sorrisos!</h2>
-                    <button id="btnhome">saiba mais</button>
+            <div id="hero-p">
+                <p class="p">Mais do que simples presentes, são pontes que unem pessoas, fortalecem laços e criam
+                    memórias duradouras. Quando oferecemos um brinde afetivo, estamos expressando gratidão,
+                    reconhecimento e carinho de forma tangível.</p>
+            </div>
+            <button id="btn-cta">
+                <p>conheça nossos produtos</p>
+            </button>
+        </div>
+        <div id="img-hero">
+            <img id="foto-hero" src="src/img/foto banner com sombra.png" alt="mulher abrindo presente">
+            <div id="blurbar"></div>
+        </div>
+    </div>
+
+    <div id="vantagens">
+        <div class="flex-center">
+            <img src="src/img/icons8-forte-100.png" alt="mão segurando halter">
+            <h3 class="h3">fortalecimento da marca</h3>
+            <p class="p">
+                Os brindes afetivos personalizados criam uma associação positiva com a marca. Quando os clientes recebem
+                um brinde que demonstra cuidado e afeto, eles tendem a lembrar da empresa com carinho. Isso fortalece a
+                fidelidade à marca e aumenta a probabilidade de recomendações boca a boca.
+            </p>
+        </div>
+        <div class="flex-center">
+            <img src="src/img/icons8-cérebro-100.png" alt="cérebro">
+            <h3 class="h3" id="mental">impacto na saúde mental e bem-estar</h3>
+            <p class="p">
+                Receber um brinde afetivo pode ter um impacto positivo na saúde mental e no bem-estar. Gestos carinhosos
+                e presentes personalizados podem elevar o ânimo, reduzir o estresse e aumentar a sensação de
+                pertencimento.
+            </p>
+        </div>
+        <div class="flex-center">
+            <img src="src/img/icons8-conexão-100.png" alt="conexao">
+            <h3 class="h3">conexão</h3>
+            <p class="p">
+                Os brindes afetivos são uma ferramenta poderosa para construir e manter relacionamentos. Quando uma
+                empresa envia um brinde personalizado, ela está comunicando que se preocupa com seus clientes e
+                colaboradores. Isso cria uma conexão emocional.
+            </p>
+        </div>
+    </div>
+
+    <div id="sobre" class="flex-center">
+        <h2 class="h2">quem somos</h2>
+        <div id="sobre-content">
+            <div id="sobre-txt" class="column">
+                <p class="p">
+                    Sejam muito bem vindos! Meu nome é Adriana e estou à frente da Donnadri Brindes Afetivos, que nasceu
+                    de um momento de inspiração,onde percebi que os presentes mais memoráveis eram aqueles que
+                    capturavam sentimentos genuínos e momentos compartilhados.
+                </p>
+                <p class="p">
+                    Por aqui, transformamos sentimentos em presentes.
+                    Cada brinde é uma celebração do amor e da conexão humana, criado para tocar o coração de quem o
+                    recebe.
+                </p>
+                <p class="p">
+                    Com um toque pessoal e uma pitada de criatividade, nossos presentes são mais do que objetos: são
+                    mensagens de carinho que perduram.
+                </p>
+                <p class="p">
+                    Junte-se a nós nessa jornada de afeto e descubra como um simples gesto pode transformar o dia de
+                    alguém. Porque no final, o que realmente importa são as conexões que criamos e os sentimentos que
+                    compartilhamos.
+                </p>
+            </div>
+            <img src="src/img/foto mamys_3.png" alt="">
+        </div>
+    </div>
+
+    <div id="produtos" class="column">
+        <div id="produtos-titulo" class="column">
+            <h3 class="h3">produtos</h3>
+            <h2 class="h2">destaques</h2>
+        </div>
+        <div id="produtos-lista" class="flex-center">
+            <div class="produto">
+                <img src="src/img/foto_1.png" alt="">
+                <div class="produto-content column">
+                    <p class="p">espelho chaveiro</p>
+                    <button>
+                        ver produto
+                    </button>
                 </div>
             </div>
-        </section>
-
-        <div class="divisoria"></div>
-
-        <section class="section" id="sobre">
-            <div class="section" id="contentsobre">
-                <div id="txtsobre">
-                    <h3 class="h3">sobre</h3>
-                    <p>
-                        Sejam muito bem vindos. Meu nome é Adriana e estou à frente da Donnadri Brindes Afetivos, que
-                        nasceu de um momento de inspiração,onde percebi que os presentes mais memoráveis eram 
-                        aqueles que capturavam sentimentos genuínos e momentos compartilhados.
-                        <span>
-                            Por aqui, transformamos sentimentos em presentes. 
-                            Cada brinde é uma celebração do amor e da conexão humana, 
-                            criado para tocar o coração de quem o recebe. 
-                        </span>
-                        <span>
-                            Com um toque pessoal e uma pitada de criatividade, nossos presentes são mais do 
-                            que objetos: são mensagens de carinho que perduram.
-                        </span>
-                        <span>
-                            Junte-se a nós nessa jornada de afeto e descubra como um simples gesto pode transformar o dia de 
-                            alguém. Porque no final, o que realmente importa são as conexões que criamos e os 
-                            sentimentos que compartilhamos.
-                        </span>
-                    </p>
-                </div>
-                <div id="imgsobre">
-                    <img src="src/img/foto mamys_1.png" alt="Dona da empresa">
+            <div class="produto">
+                <img src="src/img/foto_2.png" alt="">
+                <div class="produto-content column">
+                    <p class="p">card com máscara desidratada</p>
+                    <button>
+                        ver produto
+                    </button>
                 </div>
             </div>
-        </section>
-
-        <section class="section" id="produtos">
-            <h3 class="h3">nossos produtos</h3>
-            <div id="gridprodutos">
-                <div id="imgprodutos">
-                    <img src="src/img/foto_1.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_2.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_3.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_4.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_5.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_6.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_7.png" alt="">
-                </div>
-                <div id="imgprodutos">
-                    <img src="src/img/foto_8.png" alt="">
+            <div class="produto">
+                <img src="src/img/foto_4.png" alt="">
+                <div class="produto-content column">
+                    <p class="p">kit plantio</p>
+                    <button>
+                        ver produto
+                    </button>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="produto">
+                <img src="src/img/foto_3.png" alt="">
+                <div class="produto-content column">
+                    <p class="p">kit café</p>
+                    <button>
+                        ver produto
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer>
+    <div id="avaliacoes" class="column flex-center">
+        <h2 class="h2">o que nossos clientes dizem</h2>
+        <div class="avaliacoes-content flex-center">
+            <div class="avaliacao column">
+                <img src="src/img/user3.png" alt="icone usuario feminino 1">
+                <p class="p">
+                    Tudo maravilhoso, desde o atendimento. Adriana é um doce, produto feito com muito carinho, super bem
+                    embalado. Entrega rápida
+                </p>
+            </div>
+            <div class="avaliacao column" id="cliente2">
+                <img src="src/img/user2.png" alt="icone usuario feminino 2">
+                <p class="p">
+                    Me surpreendi com o produto e atendimento. Foi a melhor experiência que tive com o atendimento ao
+                    consumidor. A compra foi para meu cliente e a Adriana me atendeu super bem, entrega no prazo,
+                    material perfeito. Não tenham dúvidas ao comprarem na Donnadri
+                </p>
+            </div>
+            <div class="avaliacao column">
+                <img src="src/img/user1.png" alt="icone usuario feminino 3">
+                <p class="p">
+                    Trabalho simplesmente perfeito! Muito criativa, atenciosa e caprichosa!
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <footer class="flex-center">
+        <div id="footer-content" class="flex-center">
+
+            <a href="#">
+                <img src="src/img/donnadri_logotipo_branco.png" alt="logotipo">
+            </a>
+
+            <div class="info-container flex-center">
+                <div class="info-icon column flex-center">
+                    <i data-lucide="mail" width="74" height="74" stroke-width="1.4"></i>
+                    <p class="p">contato</p>
+                </div>
+                <div class="line"></div>
+                <div class="info column">
+                    <p class="p">(11) 96707-6662</p>
+                    <p class="p">donnadribrindes@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-container flex-center">
+                <div class="info-icon column flex-center">
+                    <i data-lucide="heart" width="74" height="74" stroke-width="1.4"></i>
+                    <p class="p">social</p>
+                </div>
+                <div class="line"></div>
+                <div class="info column">
+                    <a href="https://www.instagram.com/donnadri_brindes" class="social-info flex-center">
+                        <i data-lucide="instagram"></i>
+                        <p class="p">/donnadribrindes</p>
+                    </a>
+                    <a href="https://wa.me/5511967076662" class="social-info flex-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                        <p class="p">(11) 96707-6662</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-container flex-center">
+                <div class="info-icon column flex-center">
+                    <i data-lucide="user-search" width="74" height="74" stroke-width="1.4"></i>
+                    <p class="p">atendimento</p>
+                </div>
+                <div class="line"></div>
+                <div class="info column">
+                    <p class="p">Seg à Sex - 9h às 18h</p>
+                    <p class="p" id="loja">não possuímos loja física</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
+
 </html>

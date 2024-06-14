@@ -1,0 +1,45 @@
+:root {
+    --roxo: #5C509C;
+    --creme: #F8F9F4;
+    --verde: #9DB600;
+}
+
+.h1 {
+    font-weight: 600;
+    font-size: 64px;
+    text-transform: capitalize;
+    color: var(--roxo);
+}
+
+.h2 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-info {
+    gap: 10px;
+    justify-content: flex-start;
+    cursor: pointer;
+}

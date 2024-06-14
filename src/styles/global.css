@@ -1,50 +1,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-:root{
-    --purple: #5c509c;
-    --white: #f8f9f4;
-    --violet: #b5a1d9;
-    --green: #9db600;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F6E7D4;
+    width: 1280px;
+    margin: auto;
     font-family: "Quicksand", sans-serif;
 }
 
-body{
-    max-width: 1800px;
-    margin: auto;
-    background: var(--white);
-}
-
-
-main{
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    margin-top: 50px;
 }
 
-.divisoria{
-    background: var(--purple);
-    min-height: 5px;
-    min-width: 100vw;
+#logotipo {
+    max-width: 200px;
+    cursor: pointer;
 }
 
-.section{
+#navbar {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-    max-width: 100%;
-}
-
-.h3{
-    font-size: 3rem;
+    gap: 40px;
     text-transform: capitalize;
-    color: var(--white);
+    font-size: 20px;
     font-weight: 500;
+}
+
+#navbar li {
+    cursor: pointer;
+    color: var(--roxo);
+    transition: ease 0.3s all;
+}
+
+#navbar li:hover{
+    transform: scale(1.05);
+}
+
+#navbar-cta {
+    font-weight: 600;
+}
+
+#hero {
+    justify-content: flex-start;
+    margin-top: 150px;
+}
+
+#hero-content {
+    gap: 30px;
+}
+
+#hero-p {
+    max-width: 440px;
+}
+
+#btn-cta {
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--creme);
+    background-color: var(--verde);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    max-width: 241px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+#btn-cta:hover{
+    transform: translateX(10px) scale(1.1);
+}
+
+#img-hero {
+    position: absolute;
+    margin: 140px 0 0 450px;
+}
+
+#foto-hero {
+    max-height: 800px;
+    position: relative;
+}
+
+#blurbar {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(360deg, rgb(246, 231, 212), rgba(246, 231, 212, 0));
+    position: absolute;
+    bottom: 0;
+
+}
+
+#vantagens {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 425px;
+}
+
+#vantagens div {
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s ease all;
+}
+
+#vantagens div:hover{
+    scale: 1.05;
+}
+
+#vantagens h3 {
+    color: var(--roxo);
+    text-transform: capitalize;
+}
+
+#vantagens p {
+    text-align: center;
+    max-width: 300px;
+}
+
+#sobre {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+#sobre h2 {
+    color: var(--roxo);
+    text-transform: capitalize;
+}
+
+#sobre-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--roxo);
+    color: var(--creme);
+    padding: 15px 50px;
+    border-radius: 30px;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-txt {
+    gap: 30px;
+}
+
+#sobre img {
+    max-width: 400px;
+}
+
+#produtos {
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+#produtos-titulo {
+    align-items: center;
+    justify-content: center;
+}
+
+#produtos-titulo h3 {
+    text-transform: capitalize;
+}
+
+#produtos-titulo h2 {
+    text-transform: capitalize;
+    color: var(--roxo);
+}
+
+#produtos-lista {
+    gap: 30px;
+}
+
+.produto {
+    width: 298px;
+    height: 450px;
+    border-radius: 30px;
+    background-color: var(--creme);
+    overflow: hidden;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-height: 301px;
+}
+
+.produto-content {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+.produto p {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.produto button {
+    background-color: var(--verde);
+    color: var(--creme);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.produto button:hover{
+    transform: scale(1.1) translateX(4px);
+}
+
+#avaliacoes {
+    margin-top: 150px;
+    gap: 30px;
+}
+
+#avaliacoes h2 {
+    color: var(--roxo);
+    text-transform: capitalize;
+}
+
+.avaliacoes-content {
+    gap: 30px;
+}
+
+.avaliacao {
+    width: 407px;
+    height: 361px;
+    background-color: var(--creme);
+    border-radius: 30px;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 60px;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease all;
+}
+
+.avaliacao:hover{
+    scale: 1.05;
+}
+
+.avaliacao img {
+    max-width: 150px;
+}
+
+.avaliacao p {
+    text-align: center;
+}
+
+#cliente2 {
+    gap: 10px;
+}
+
+footer {
+    height: 235px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--roxo);
+    margin-top: 150px;
+}
+
+#footer-content {
+    gap: 70px;
+}
+
+#footer-content img {
+    height: 106px;
+    cursor: pointer;
+}
+
+.info-container {
+    gap: 20px;
+}
+
+.line {
+    border: 1px var(--creme) solid;
+    height: 106px;
+}
+
+.info-icon {
+    color: var(--creme);
+    gap: 10px;
+}
+
+
+.info-icon p {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info {
+    gap: 20px;
+    color: var(--creme);
+}
+
+#loja {
+    text-transform: uppercase;
+}
+
+.social-info {
+    text-decoration: none;
+    color: var(--creme);
 }

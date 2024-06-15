@@ -15,12 +15,24 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+#whatsapp {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    transition: 0.2s ease all;
+}
+
+#whatsapp:hover {
+    scale: 1.2;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
 }
+
 
 #logotipo {
     max-width: 200px;
@@ -42,7 +54,7 @@ header {
     transition: ease 0.3s all;
 }
 
-#navbar li:hover{
+#navbar li:hover {
     transform: scale(1.05);
 }
 
@@ -78,7 +90,7 @@ header {
     transition: 0.3s ease all;
 }
 
-#btn-cta:hover{
+#btn-cta:hover {
     transform: translateX(10px) scale(1.1);
 }
 
@@ -114,7 +126,7 @@ header {
     transition: 0.3s ease all;
 }
 
-#vantagens div:hover{
+#vantagens div:hover {
     scale: 1.05;
 }
 
@@ -156,6 +168,11 @@ header {
 
 #sobre img {
     max-width: 400px;
+    transition: all ease 0.3s;
+}
+
+#sobre img:hover{
+    scale: 1.05;
 }
 
 #produtos {
@@ -194,6 +211,12 @@ header {
 
 .produto img {
     max-height: 301px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.produto img:hover {
+    scale: 1.1;
 }
 
 .produto-content {
@@ -222,7 +245,7 @@ header {
     transition: 0.3s ease all;
 }
 
-.produto button:hover{
+.produto button:hover {
     transform: scale(1.1) translateX(4px);
 }
 
@@ -252,7 +275,7 @@ header {
     transition: 0.3s ease all;
 }
 
-.avaliacao:hover{
+.avaliacao:hover {
     scale: 1.05;
 }
 
